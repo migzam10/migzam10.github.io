@@ -1,5 +1,5 @@
 const data = {
-    menu: ["Inicio", "Sobre mi", "Educación", "Habilidades", "Portafolio", "Servicios", "Testimonios", "Contacto"],
+    menu: ["Inicio", "Sobre mi", "Educación", "Habilidades", "Portafolio", "Servicios", "Contacto"],
     iconosMenu: [
         "fa-solid fa-house",
         "fa-regular fa-user",
@@ -489,7 +489,7 @@ function renderizarSecciones() {
         </section>`;
 
     // ── TESTIMONIOS ───────────────────────────────────────────
-    const testimoniosHtml = data.testimonios.map(t => `
+    /*const testimoniosHtml = data.testimonios.map(t => `
         <div class="testimonio-card glass-effect ${t.placeholder ? 'testimonio-placeholder' : ''}">
             <div class="testimonio-quote"><i class="fa-solid fa-quote-left"></i></div>
             <p class="testimonio-texto">${t.texto}</p>
@@ -510,7 +510,7 @@ function renderizarSecciones() {
                 La confianza se construye con resultados. Aquí algunos comentarios de quienes han trabajado conmigo.
             </p>
             <div class="testimonios-grid">${testimoniosHtml}</div>
-        </section>`;
+        </section>`;*/
 
     // ── CONTACTO ──────────────────────────────────────────────
     html += `
