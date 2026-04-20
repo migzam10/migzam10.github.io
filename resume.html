@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miguel Zambrano — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/favicon.png" type="image/x-icon">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 48px auto;
+    padding: 0 40px 60px;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 14px;
+  }
+
+  .name {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: #111;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #444;
+    margin-top: 3px;
+    font-weight: 400;
+  }
+
+  .contact {
+    text-align: right;
+    font-size: 12.5px;
+    color: #333;
+    line-height: 1.8;
+  }
+
+  .contact a { color: #333; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  hr {
+    border: none;
+    border-top: 1.5px solid #ccc;
+    margin-bottom: 18px;
+  }
+
+  section { margin-bottom: 22px; }
+
+  .section-title {
+    font-size: 14px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #111;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+
+  /* EXPERIENCE */
+  .exp-item { margin-bottom: 14px; }
+  .exp-item:last-child { margin-bottom: 0; }
+
+  .exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+
+  .exp-role { font-weight: 700; font-size: 14.5px; color: #111; }
+  .exp-date { font-size: 12px; color: #666; white-space: nowrap; }
+  .exp-company { font-size: 13.5px; font-weight: 500;color: #000; margin-bottom: 4px; }
+
+  .exp-bullets { list-style: disc; padding-left: 18px; color: #555; }
+  .exp-bullets li { font-size: 12.5px; margin-bottom: 2px; line-height: 1.5; }
+
+  /* EDUCATION */
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+
+  .edu-degree { font-weight: 700; font-size: 13px; color: #111; }
+  .edu-inst { font-size: 12.5px; color: #444; }
+  .edu-right { font-size: 12px; color: #666; text-align: right; white-space: nowrap; }
+
+  /* SKILLS */
+  .skills-list { list-style: disc; padding-left: 18px; color: #333; }
+  .skills-list li { font-size: 12.5px; margin-bottom: 3px; line-height: 1.5; }
+  .skills-list li strong { color: #111; }
+
+  /* PRINT */
+  @media print {
+    body { font-size: 12px; }
+    .page { margin: 0; padding: 20px 32px 30px; max-width: 100%; }
+    .no-print { display: none; }
+  }
+
+  .print-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #111;
+    color: #fff;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 9px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .2s;
+  }
+  .print-btn:hover { opacity: 1; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <div>
+      <div class="name">Miguel Zambrano</div>
+      <div class="subtitle">Ingeniero de Sistemas &middot; Desarrollador de Software</div>
+    </div>
+    <div class="contact">
+      <a href="tel:+573002421327">+57 300 242 1327</a><br>
+      <a href="mailto:miguel@migzam.uk">miguel@migzam.uk</a><br>
+      <a href="https://migzam.uk" target="_blank">migzam.uk</a><br>
+      Barranquilla, Colombia
+    </div>
+  </header>
+
+  <hr>
+
+  <!-- EXPERIENCIA -->
+  <section>
+    <div class="section-title">Experiencia</div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Desarrollador de Software e Integración</span>
+        <span class="exp-date">Barranquilla, CO. 2025 - Presente</span>
+      </div>
+      <div class="exp-company">Freelance</div>
+      <ul class="exp-bullets">
+        <li>Software a medida para extracción y procesamiento de datos desde equipos de laboratorio clínico (URIT 3010 y Mindray BA-88A) vía puerto serial</li>
+        <li>Eliminación del registro manual de resultados, integrando datos automáticamente al sistema clínico</li>
+        <li>Diseño e implementación de aplicaciones web para clientes del sector salud</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Ingeniero de Sistemas</span>
+        <span class="exp-date">Barranquilla, CO. 2025 - Presente</span>
+      </div>
+      <div class="exp-company">Freelance</div>
+      <ul class="exp-bullets">
+        <li>Desarrollo de sistemas de gestión web para talleres, perfumerías e IPS (PHP, MySQL, JavaScript)</li>
+        <li>Diseño de interfaces UI/UX y puntos de venta mobile-first operables 100% desde celular</li>
+        <li>Configuración de servidores, despliegue de redes y soporte técnico especializado</li>
+      </ul>
+    </div>
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Coordinador de Sistemas y Gestión de Información</span>
+        <span class="exp-date">Santa Barbara, Antioquia CO. 2025</span>
+      </div>
+      <div class="exp-company">Asociacion Los Lomeñitos</div>
+      <ul class="exp-bullets">
+        <li>Administración y Reporte en Plataformas Misionales (Cuéntame)</li>
+        <li>Garantía de Seguridad de la Información</li>
+        <li>Soporte Técnico y Transformación Digital de la Operación</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Coordinador de Mantenimiento y Sistemas</span>
+        <span class="exp-date">Barranquilla, CO. 2022 - 2024</span>
+      </div>
+      <div class="exp-company">SSO — CRC Servicios de Salud Ocupacional S.A.S.</div>
+      <ul class="exp-bullets">
+        <li>Gestión completa de infraestructura tecnológica: servidores, redes, equipos médicos y de cómputo</li>
+        <li>Desarrollo y mantenimiento del sitio web institucional durante 2 años consecutivos</li>
+        <li>Rediseño e implementación de red LAN para +50 dispositivos con alta disponibilidad y seguridad</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Técnico Correctivo</span>
+        <span class="exp-date">Barranquilla, CO. 2022 - 2022</span>
+      </div>
+      <div class="exp-company">E&C Ingenieros S.A.S.</div>
+      <ul class="exp-bullets">
+        <li>Mantenimiento correctivo y preventivo de equipos de cómputo, redes y telecomunicaciones.</li>
+        <li>Soporte técnico de primer y segundo nivel.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <span class="exp-role">Auxiliar de Mantenimiento y Sistemas</span>
+        <span class="exp-date">Barranquilla, CO. 2019 - 2022</span>
+      </div>
+      <div class="exp-company">Servicios de Salud Ocupacional S.A.S.</div>
+      <ul class="exp-bullets">
+        <li>Administración de redes y servidor Windows Server 2012, gestión de dominios y hosting</li>
+        <li>Diseño y lanzamiento del sitio web institucional, activo por más de 5 años en producción</li>
+        <li>Soporte en CCTV, telefonía y mantenimiento preventivo/correctivo de equipos</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section>
+    <div class="section-title">Educación</div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-degree">Ingeniería de Sistemas</div>
+        <div class="edu-inst">Institución Universitaria Americana</div>
+      </div>
+      <div class="edu-right">Barranquilla, CO. Graduado</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-degree">Tecnólogo en Desarrollo de Software</div>
+        <div class="edu-inst">Institución Universitaria Americana</div>
+      </div>
+      <div class="edu-right">Barranquilla, CO. 2024</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-degree">Diplomado en Programación Kotlin (120h)</div>
+        <div class="edu-inst">Corporación Universitaria Americana</div>
+      </div>
+      <div class="edu-right">Barranquilla, CO. 2021</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-degree">Técnico Profesional en Programación de Computadores</div>
+        <div class="edu-inst">Institución Universitaria Americana</div>
+      </div>
+      <div class="edu-right">Barranquilla, CO. 2022</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="edu-degree">Cursos SENA: PHP, Java GUI, Apps Android, SCRUM</div>
+        <div class="edu-inst">SENA</div>
+      </div>
+      <div class="edu-right">2018 – 2022</div>
+    </div>
+
+  </section>
+
+  <!-- HABILIDADES -->
+  <section>
+    <div class="section-title">Habilidades</div>
+    <ul class="skills-list">
+      <li><strong>Lenguajes y herramientas:</strong> JavaScript, PHP, Python, Java, Kotlin, HTML5, CSS3, Git, MySQL, SQLite</li>
+      <li><strong>Sistemas y servidores:</strong> GNU/Linux, Windows Server, Apache, gestión de dominios y hosting</li>
+      <li><strong>Infraestructura de redes:</strong> LAN/WAN, cableado estructurado, VLANs, routers, switches, Access Points</li>
+      <li><strong>Especialidades:</strong> Integración con equipos de laboratorio vía API Serial, diseño UI/UX, sistemas de gestión empresarial</li>
+      <li><strong>Metodologías:</strong> SCRUM, análisis de requerimientos, ciclo completo de desarrollo de software</li>
+    </ul>
+  </section>
+
+</div>
+
+<button class="print-btn no-print" onclick="window.print()">⬇ Guardar PDF</button>
+
+</body>
+</html>

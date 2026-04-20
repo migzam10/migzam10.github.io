@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Zambrano | Ingeniero de Sistemas</title>
+    <meta name="description" content="Portafolio de Miguel Zambrano — Ingeniero de Sistemas, Desarrollador Web y Freelancer en Barranquilla. Diseño web, software a medida, soporte TI.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <i class="bi bi-list mobile-nav-toggle"></i>
+
+    <div class="app-container">
+        <main id="main-content">
+            <!-- Secciones generadas dinámicamente desde app.js -->
+        </main>
+
+        <nav id="right-menu">
+            <div class="profile-section">
+                <div class="profile-img-container">
+                    <img src="img/img.png" alt="Miguel Zambrano" class="profile-img">
+                </div>
+                <h2 class="profile-name">Miguel Zambrano</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/miguel-zambrano-zabala-594a6919b/" class="social-icon" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/migzam10/" class="social-icon" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://x.com/migzam10" class="social-icon" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <ul id="menu-list"></ul>
+        </nav>
+    </div>
+
+    <!-- Modal de Portafolio -->
+    <div id="project-modal" class="modal-hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,56 +1,649 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Zambrano | Ingeniero de Sistemas & Desarrollador Web</title>
-    <meta name="description" content="Portafolio de Miguel Zambrano — Ingeniero de Sistemas, Desarrollador Web y Freelancer en Barranquilla. Diseño web, software a medida, soporte TI.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Zambrano</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Courier+Prime:wght@400;700&display=swap"
+    rel="stylesheet">
+  <meta name="description"
+    content="Ingeniero de Sistemas con +6 años de experiencia en desarrollo de software a medida, diseño UI/UX, infraestructura de redes y soporte TI Colombia. Convierto ideas en soluciones tecnológicas que generan impacto real.">
+  <meta name="keywords"
+    content="ingeniero de sistemas barranquilla, desarrollador web barranquilla, desarrollo software colombia, diseño UI UX, freelancer TI, PHP MySQL JavaScript, infraestructura redes, soporte técnico barranquilla, Miguel Zambrano, migzam">
+  <meta name="author" content="Miguel Zambrano">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Spanish">
+  <meta name="geo.region" content="CO-ATL">
+  <meta name="geo.placename" content="Barranquilla, Atlántico, Colombia">
+  <meta name="geo.position" content="10.9685;-74.7813">
+  <meta name="ICBM" content="10.9685, -74.7813">
+  <link rel="canonical" href="https://migzam.uk/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://migzam.uk/">
+  <meta property="og:site_name" content="Miguel Zambrano — Desarrollador & Ingeniero de Sistemas">
+  <meta property="og:title" content="Miguel Zambrano | Ingeniero de Sistemas & Desarrollador Web">
+  <meta property="og:description"
+    content="Desarrollo software a medida, interfaces limpias y soluciones tecnológicas que generan impacto. +6 años de experiencia en Barranquilla, Colombia.">
+  <meta property="og:image" content="https://migzam.uk/img/img.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Miguel Zambrano — Ingeniero de Sistemas y Desarrollador Web en Barranquilla">
+  <meta property="og:locale" content="es_CO">
+
+  <!-- ═══════════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miguel Zambrano | Ingeniero de Sistemas & Desarrollador Web">
+  <meta name="twitter:description"
+    content="Desarrollo software a medida, interfaces limpias y soluciones tecnológicas que generan impacto. +6 años de experiencia en Barranquilla, Colombia.">
+  <meta name="twitter:image" content="https://migzam.uk/img/img.png">
+  <meta name="twitter:image:alt" content="Miguel Zambrano — Ingeniero de Sistemas">
+
+  <!-- ═══════════════════════════════════════════
+     SCHEMA.ORG — DATOS ESTRUCTURADOS (JSON-LD)
+     Esto es lo que Google usa para Knowledge Panel
+════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Miguel Zambrano",
+  "alternateName": "Miguel Zambrano Zabala",
+  "url": "https://migzam.uk",
+  "image": "https://migzam.uk/img/img.png",
+  "email": "miguel@migzam.uk",
+  "telephone": "+57-300-242-1327",
+  "jobTitle": "Ingeniero de Sistemas",
+  "description": "Ingeniero de Sistemas con más de 6 años de experiencia en desarrollo de software a medida, diseño UI/UX, infraestructura de redes y soporte TI. Especializado en soluciones para IPS, talleres y empresas de servicios en Colombia.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Barranquilla",
+    "addressRegion": "Atlántico",
+    "addressCountry": "CO"
+  },
+  "knowsAbout": [
+    "Desarrollo de Software",
+    "Ingeniería de Sistemas",
+    "Diseño UI/UX",
+    "JavaScript",
+    "PHP",
+    "MySQL",
+    "Python",
+    "Java",
+    "GNU/Linux",
+    "Windows Server",
+    "Infraestructura de Redes",
+    "Git",
+    "Integración de sistemas de laboratorio clínico"
+  ],
+  "sameAs": [
+    "https://github.com/migzam10",
+    "https://www.linkedin.com/in/miguel-zambrano-zabala-594a6919b/",
+    "https://migzam.uk"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Institución Universitaria Americana",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barranquilla",
+        "addressCountry": "CO"
+      }
+    }
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Desarrollador de Software",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Barranquilla"
+    },
+    "skills": "Desarrollo Web, PHP, JavaScript, MySQL, Python, Infraestructura de Redes, UI/UX Design"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desarrollo de Software a Medida",
+        "description": "Plataformas web, apps de escritorio y sistemas de gestión personalizados para empresas."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Diseño y Desarrollo Web",
+        "description": "Sitios web responsive, optimizados para SEO, con dominio y hosting incluido."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Infraestructura de Redes",
+        "description": "Cableado estructurado, configuración de routers, switches, VLANs y Access Points."
+      }
+    }
+  ]
+}
+</script>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --sand: #f5f0e8;
+      --ink: #1a1410;
+      --rust: #c4522a;
+      --gold: #c9963a;
+      --mid: #6b5e4e;
+      --checker: rgba(47, 154, 95);
+    }
+
+    html,
+    body {
+      height: 100%;
+      background: var(--ink);
+      color: var(--sand);
+      font-family: 'Courier Prime', monospace;
+      overflow-x: hidden;
+    }
+
+    /* Animated noise grain */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 100;
+      opacity: 0.6;
+    }
+
+    /* Rotating big circle */
+    .circle-bg {
+      position: fixed;
+      width: 700px;
+      height: 700px;
+      border: 1px solid rgba(201, 150, 58, 0.12);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: spin 40s linear infinite;
+    }
+
+    .circle-bg::before {
+      content: '';
+      position: absolute;
+      inset: 60px;
+      border: 1px solid rgba(201, 150, 58, 0.08);
+      border-radius: 50%;
+    }
+
+    .circle-bg::after {
+      content: '';
+      position: absolute;
+      inset: 140px;
+      border: 1px dashed rgba(196, 82, 42, 0.15);
+      border-radius: 50%;
+      animation: spin 20s linear infinite reverse;
+    }
+
+    @keyframes spin {
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    /* Corner marks */
+    .corner {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      opacity: 0.4;
+    }
+
+    .corner--tl {
+      top: 24px;
+      left: 24px;
+      border-top: 1px solid var(--gold);
+      border-left: 1px solid var(--gold);
+    }
+
+    .corner--tr {
+      top: 24px;
+      right: 24px;
+      border-top: 1px solid var(--gold);
+      border-right: 1px solid var(--gold);
+    }
+
+    .corner--bl {
+      bottom: 24px;
+      left: 24px;
+      border-bottom: 1px solid var(--gold);
+      border-left: 1px solid var(--gold);
+    }
+
+    .corner--br {
+      bottom: 24px;
+      right: 24px;
+      border-bottom: 1px solid var(--gold);
+      border-right: 1px solid var(--gold);
+    }
+
+    /* Scanning line */
+    .scanline {
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(201, 150, 58, 0.3), transparent);
+      animation: scan 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scan {
+      0% {
+        top: -5px;
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      95% {
+        opacity: 1;
+      }
+
+      100% {
+        top: 100vh;
+        opacity: 0;
+      }
+    }
+
+    /* Main layout */
+    .stage {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    /* Greeting */
+    .greeting {
+      font-family: 'Courier Prime', monospace;
+      font-size: clamp(10px, 1.4vw, 14px);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--rust);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.3s;
+    }
+
+    /* Big headline */
+    .headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(52px, 10vw, 130px);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      color: var(--sand);
+      opacity: 0;
+      animation: fadeUp 0.9s ease forwards 0.6s;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* Divider ornament */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 2.5rem auto;
+      width: min(340px, 90%);
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1s;
+    }
+
+    .ornament-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(201, 150, 58, 0.35);
+    }
+
+    .ornament-diamond {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      opacity: 0.7;
+    }
+
+    /* Message */
+    .message {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(16px, 2.2vw, 22px);
+      font-style: italic;
+      color: rgba(245, 240, 232, 0.75);
+      line-height: 1.6;
+      max-width: 520px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1.2s;
+    }
+
+    /* Status pill */
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border: 1px solid rgba(201, 150, 58, 0.3);
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--sand);
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1.5s;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--checker);
+      animation: pulse 2s ease infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.7);
+      }
+    }
+
+    /* Signature */
+    .signature {
+      margin-top: 4rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 2.1s;
+    }
+
+    .sig-label {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.5rem;
+    }
+
+    .sig-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: var(--sand);
+    }
+
+    .sig-name span {
+      color: var(--gold);
+    }
+
+    /* Typewriter cursor for greeting */
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── BUTTONS ── */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 2.8rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1.6s;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 22px;
+      font-family: 'Courier Prime', monospace;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background .2s, color .2s, border-color .2s;
+      cursor: pointer;
+    }
+
+    /* Primary — filled gold */
+    .btn--primary {
+      background: var(--gold);
+      color: var(--ink);
+      border: 1px solid var(--gold);
+      font-weight: 700;
+    }
+
+    .btn--primary:hover {
+      background: #d9a846;
+      border-color: #d9a846;
+    }
+
+    /* Secondary — outlined */
+    .btn--outline {
+      background: transparent;
+      color: var(--sand);
+      border: 1px solid rgba(201, 150, 58, 0.35);
+    }
+
+    .btn--outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Ghost — very subtle */
+    .btn--ghost {
+      background: transparent;
+      color: var(--mid);
+      border: 1px solid rgba(107, 94, 78, 0.3);
+    }
+
+    .btn--ghost:hover {
+      border-color: rgba(201, 150, 58, 0.4);
+      color: var(--sand);
+    }
+
+    .btn svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+      opacity: .8;
+    }
+
+    /* Floating specks */
+    .speck {
+      position: fixed;
+      width: 2px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+      }
+
+      10% {
+        opacity: 0.6;
+      }
+
+      90% {
+        opacity: 0.3;
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-100vh) translateX(var(--drift, 30px));
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <i class="bi bi-list mobile-nav-toggle"></i>
+  <div class="circle-bg"></div>
+  <div class="scanline"></div>
 
-    <div class="app-container">
-        <main id="main-content">
-            <!-- Secciones generadas dinámicamente desde app.js -->
-        </main>
+  <div class="corner corner--tl"></div>
+  <div class="corner corner--tr"></div>
+  <div class="corner corner--bl"></div>
+  <div class="corner corner--br"></div>
 
-        <nav id="right-menu">
-            <div class="profile-section">
-                <div class="profile-img-container">
-                    <img src="img/img.png" alt="Miguel Zambrano" class="profile-img">
-                </div>
-                <h2 class="profile-name">Miguel Zambrano</h2>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/miguel-zambrano-zabala-594a6919b/" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/migzam10/" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://x.com/migzam10" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
-            <ul id="menu-list"></ul>
-        </nav>
+  <!-- Floating specks -->
+  <script>
+    for (let i = 0; i < 18; i++) {
+      const s = document.createElement('div');
+      s.className = 'speck';
+      s.style.cssText = `left:${Math.random() * 100}vw; bottom:0; animation-duration:${8 + Math.random() * 14}s; animation-delay:${Math.random() * 12}s; --drift:${(Math.random() - 0.5) * 80}px;`;
+      document.body.appendChild(s);
+    }
+  </script>
+
+  <main class="stage">
+
+    <p class="greeting">✦ &nbsp; Bienvenido &nbsp; ✦</p>
+
+    <h1 class="headline">Hola,<br><em>mundo.</em></h1>
+
+    <div class="ornament">
+      <div class="ornament-line"></div>
+      <div class="ornament-diamond"></div>
+      <div class="ornament-line"></div>
     </div>
 
-    <!-- Modal de Portafolio -->
-    <div id="project-modal" class="modal-hidden">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div id="modal-body"></div>
-        </div>
+    <!--p class="message">
+    Mi sitio web está en construcción.<br>
+    Algo extraordinario está por llegar.
+  </p-->
+
+    <div class="status">
+      <div class="status-dot"></div>
+      Disponible
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="app.js"></script>
+    <!-- BUTTONS -->
+    <div class="btn-row">
+      <a href="resume.html" class="btn btn--primary" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10 9 9 9 8 9" />
+        </svg>
+        Resumen
+      </a>
+      <a href="cv.html" class="btn btn--outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7" />
+          <rect x="14" y="3" width="7" height="7" />
+          <rect x="14" y="14" width="7" height="7" />
+          <rect x="3" y="14" width="7" height="7" />
+        </svg>
+        Portafolio
+      </a>
+      <a href="https://github.com/migzam10" class="btn btn--outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+        </svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/miguel-zambrano-zabala-594a6919b/" class="btn btn--outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="signature">
+      <p class="sig-label">— con saludos</p>
+      <p class="sig-name">Miguel <span>Zambrano</span></p>
+    </div>
+
+  </main>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+    integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+    data-cf-beacon='{"version":"2024.11.0","token":"faa741862ee04ce3bff6f6d362621f2a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

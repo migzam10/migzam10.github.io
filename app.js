@@ -51,7 +51,8 @@ const data = {
         ],
         experiencia: [
             { cargo: "Desarrollador de Software e Integración", fecha: "2025 - Presente", empresa: "Freelance", detalle: "Desarrollo de software a medida para extracción y procesamiento de datos de equipos de laboratorio clínico (URIT 3010 y Mindray BA-88A). Diseño e implementación de aplicaciones web para clientes del sector salud." },
-            { cargo: "Ingeniero de Sistemas", fecha: "2024 - Presente", empresa: "Freelance", detalle: "Diseño y desarrollo de soluciones de software a medida. Gestión de infraestructura tecnológica, configuración de servidores, despliegue de redes y soporte técnico especializado." },
+            { cargo: "Ingeniero de Sistemas", fecha: "2025 - Presente", empresa: "Freelance", detalle: "Diseño y desarrollo de soluciones de software a medida. Gestión de infraestructura tecnológica, configuración de servidores, despliegue de redes y soporte técnico especializado." },
+            { cargo: "Coordinador de Sistemas y Gestión de Información", fecha: "2025", empresa: "Asociacion Los Lomeñitos", detalle: "Administración y reporte en plataformas misionales (Cuéntame). Garantía de seguridad de la información. Soporte técnico y transformación digital de la operación." },
             { cargo: "Coordinador de Mantenimiento y Sistemas", fecha: "2022 - 2024", empresa: "SSO - CRC Servicios de Salud Ocupacional S.A.S.", detalle: "A cargo de toda la infraestructura tecnológica de la IPS: servidores, redes, equipos médicos y de cómputo. Desarrollé y mantuve el sitio web institucional durante 2 años de forma continua." },
             { cargo: "Técnico Correctivo", fecha: "2022", empresa: "E&C Ingenieros S.A.S.", detalle: "Mantenimiento correctivo y preventivo de equipos de cómputo, redes y telecomunicaciones. Soporte técnico de primer y segundo nivel." },
             { cargo: "Auxiliar de Mantenimiento y Sistemas", fecha: "2019 - 2022", empresa: "Servicios de Salud Ocupacional S.A.S.", detalle: "Mantenimiento de equipos, administración de redes y servidor Windows Server 2012, gestión de dominios y hosting, diseño del sitio web institucional y soporte en CCTV y telefonía." },
@@ -191,7 +192,7 @@ const data = {
         {
             titulo: "Mantenimiento y Soporte TI",
             icono: "fa-solid fa-screwdriver-wrench",
-            desde: "Desde $80.000 COP",
+            desde: "Desde $40.000 COP",
             items: [
                 "Soporte técnico a equipos de cómputo presencial o remoto.",
                 "Mantenimiento preventivo y correctivo a equipos, servidores y cámaras.",
@@ -201,7 +202,7 @@ const data = {
         {
             titulo: "Diseño y Desarrollo Web",
             icono: "fa-solid fa-palette",
-            desde: "Desde $800.000 COP",
+            desde: "Desde $600.000 COP",
             items: [
                 "Sitios web a la medida, responsive y optimizados para SEO.",
                 "Análisis e implementación de posicionamiento SEO.",
@@ -222,7 +223,7 @@ const data = {
         {
             titulo: "Infraestructura de Redes",
             icono: "fa-solid fa-network-wired",
-            desde: "Desde $200.000 COP",
+            desde: "Desde $100.000 COP",
             items: [
                 "Cableado estructurado y cuartos de comunicaciones.",
                 "Configuración de routers, switches, VLANs y subredes.",
@@ -242,7 +243,7 @@ const data = {
         {
             titulo: "Consultoría TI",
             icono: "fa-solid fa-list-check",
-            desde: "Desde $150.000 COP / hora",
+            desde: "Desde $100.000 COP",
             items: [
                 "Elaboración de Plan Estratégico de TI (PETI).",
                 "Consultoría en dominios, alojamientos y correos corporativos.",
