@@ -1,0 +1,4 @@
+Privacy Policy:
+Política de Privacidad — SocialApp
+Esta aplicación almacena tokens de acceso localmente
+para publicar contenido en nombre del usuario.
