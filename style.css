@@ -744,7 +744,7 @@ body { background-color: var(--bg-color); color: var(--text-main); overflow-x: h
 
 .modal-content {
     background: var(--bg-color);
-    width: 90%; max-width: 800px; max-height: 90vh;
+    width: 90%; max-width: 900px; max-height: 90vh;
     overflow-y: auto;
     border-radius: 16px;
     position: relative;

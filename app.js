@@ -21,13 +21,13 @@ const data = {
     },
 
     sobreMi: {
-        foto: "img/img.png",
+        foto: "img/foto-perfil.png",
         tagline: "Construyo tecnología que trabaja para ti, no al revés.",
         bio: "Soy Ingeniero de Sistemas con más de 6 años de experiencia trabajando en el ciclo completo de proyectos tecnológicos: desde el análisis de requerimientos hasta el despliegue en producción. He colaborado con IPS, talleres y empresas de servicios para modernizar sus operaciones a través del software.",
         bio2: "Mi diferencial es que entiendo tanto el código como el negocio. No solo construyo lo que me pides; te ayudo a entender qué necesitas realmente y cómo la tecnología puede ahorrarle dinero y tiempo a tu empresa.",
-        sitioWeb: "www.migzam.uk",
-        correo: "miguel@migzam.uk",
-        celular: "+57 300 242 1327",
+        sitioWeb: "www.migzam.com",
+        correo: "miguel@migzam.com",
+        celular: "+57 302 8414 636",
         profesion: "Ingeniero de Sistemas / Desarrollador",
         stats: [
             { valor: "6+", label: "Años de experiencia" },
@@ -50,9 +50,9 @@ const data = {
             { tipo: "Curso: Metodología SCRUM", fecha: "2018", institucion: "SENA", detalle: "40 horas" },
         ],
         experiencia: [
-            { cargo: "Desarrollador de Software e Integración", fecha: "2025 - Presente", empresa: "Freelance", detalle: "Desarrollo de software a medida para extracción y procesamiento de datos de equipos de laboratorio clínico (URIT 3010 y Mindray BA-88A). Diseño e implementación de aplicaciones web para clientes del sector salud." },
-            { cargo: "Ingeniero de Sistemas", fecha: "2025 - Presente", empresa: "Freelance", detalle: "Diseño y desarrollo de soluciones de software a medida. Gestión de infraestructura tecnológica, configuración de servidores, despliegue de redes y soporte técnico especializado." },
-            { cargo: "Coordinador de Sistemas y Gestión de Información", fecha: "2025", empresa: "Asociacion Los Lomeñitos", detalle: "Administración y reporte en plataformas misionales (Cuéntame). Garantía de seguridad de la información. Soporte técnico y transformación digital de la operación." },
+            { cargo: "Técnico Asesor de Sistemas", fecha: "2026", empresa: "CertiMedic S.A.S.", detalle: "Asesoría en sistemas de información, mantenimiento preventivo y correctivo de equipos, redes y telecomunicaciones. Desarrollo de sistemas de gestión y soporte técnico general." },
+            { cargo: "Ingeniero de Sistemas & Desarrollador de Software", fecha: "2025 - Presente", empresa: "Freelance", detalle: "Diseño y desarrollo de plataformas web y software a medida («Turnero», «INGECOSMOS», POS web e integración de laboratorio clínico). Gestión de servidores, redes y bases de datos relacionales." },
+            { cargo: "Coordinador de Sistemas y Gestión de Información", fecha: "2025", empresa: "Asociación Los Lomeñitos", detalle: "Administración y reporte en plataformas misionales (Cuéntame). Garantía de seguridad de la información. Soporte técnico y transformación digital de la operación." },
             { cargo: "Coordinador de Mantenimiento y Sistemas", fecha: "2022 - 2024", empresa: "SSO - CRC Servicios de Salud Ocupacional S.A.S.", detalle: "A cargo de toda la infraestructura tecnológica de la IPS: servidores, redes, equipos médicos y de cómputo. Desarrollé y mantuve el sitio web institucional durante 2 años de forma continua." },
             { cargo: "Técnico Correctivo", fecha: "2022", empresa: "E&C Ingenieros S.A.S.", detalle: "Mantenimiento correctivo y preventivo de equipos de cómputo, redes y telecomunicaciones. Soporte técnico de primer y segundo nivel." },
             { cargo: "Auxiliar de Mantenimiento y Sistemas", fecha: "2019 - 2022", empresa: "Servicios de Salud Ocupacional S.A.S.", detalle: "Mantenimiento de equipos, administración de redes y servidor Windows Server 2012, gestión de dominios y hosting, diseño del sitio web institucional y soporte en CCTV y telefonía." },
@@ -73,14 +73,17 @@ const data = {
             { nombre: "HTML5",      icono: "fa-brands fa-html5",      color: "#e34f26" },
             { nombre: "CSS3",       icono: "fa-brands fa-css3-alt",   color: "#1572b6" },
             { nombre: "JavaScript", icono: "fa-brands fa-js",         color: "#f7df1e" },
+            { nombre: "Node.js",    icono: "fa-brands fa-node-js",    color: "#68a063" },
             { nombre: "PHP",        icono: "fa-brands fa-php",        color: "#777bb4" },
+            { nombre: "Laravel",    icono: "fa-brands fa-laravel",    color: "#ff2d20" },
             { nombre: "Python",     icono: "fa-brands fa-python",     color: "#3776ab" },
+            { nombre: "PostgreSQL", icono: "fa-solid fa-database",    color: "#336791" },
+            { nombre: "MySQL",      icono: "fa-solid fa-database",    color: "#4479a1" },
             { nombre: "Git",        icono: "fa-brands fa-git-alt",    color: "#f05032" },
             { nombre: "GitHub",     icono: "fa-brands fa-github",     color: "#f8fafc" },
             { nombre: "Linux",      icono: "fa-brands fa-linux",      color: "#fcc624" },
             { nombre: "Windows",    icono: "fa-brands fa-windows",    color: "#0078d4" },
-            { nombre: "MySQL",      icono: "fa-solid fa-database",    color: "#4479a1" },
-            { nombre: "Java",       icono: "fa-brands fa-java",  color: "#21759b" },
+            { nombre: "Java",       icono: "fa-brands fa-java",       color: "#21759b" },
             { nombre: "Android",    icono: "fa-brands fa-android",    color: "#3ddc84" },
             
         ]
@@ -89,6 +92,45 @@ const data = {
     portafolio: [
         {
             id: 1,
+            titulo: "INGECOSMOS — Sistema de Gestión Integral para Taller Automotriz",
+            imagen_principal: "img/portafolio/ingecosmos/ingecosmos-crear-ot.png",
+            imagenes_extra: [
+                "img/portafolio/ingecosmos/ingecosmos-cotizacion.png",
+                "img/portafolio/ingecosmos/ingecosmos-almacen.png",
+                "img/portafolio/ingecosmos/ingecosmos-catalogo.png"
+            ],
+            videos: [],
+            descripcion: "Plataforma web integral para la digitalización y control operativo de talleres automotrices de gran envergadura (Latonería, Pintura y Mecánica). Diseñada bajo filosofía Mobile-First para operarios y técnicos en patio, y un completo panel de mando para coordinadores y administradores. Gestiona el ciclo de vida completo de Órdenes de Trabajo (OT). Incorpora Torre de Control en vivo con semáforos de cumplimiento, cotizador automatizado, almacén e inventario de repuestos con trazabilidad por OT, liquidación de mano de obra por técnico, panel de alertas tempranas, dashboard de producción con Chart.js y generación de documentos oficiales en PDF.",
+            resultado: "Reemplazo total de planillas manuales de Excel: control en tiempo real de OTs, reducción del 65% en tiempos de liquidación de técnicos y auditoría integral de repuestos.",
+            tecnologias: ["Laravel 11", "PHP 8.2", "MySQL 8", "Bootstrap 5", "Chart.js", "DomPDF", "Mobile First", "Git"],
+            categoria: "Fullstack / Enterprise ERP",
+            fecha: "2026 - Presente",
+            url: "#"
+        },
+        {
+            id: 2,
+            titulo: "Turnero — Sistema de Gestión de Turnos y Llamado en Sala para IPS",
+            imagen_principal: "img/portafolio/turnero/turnero-menu.png",
+            imagenes_extra: [
+                "img/portafolio/turnero/turnero-display.png",
+                "img/portafolio/turnero/turnero-recepcion.png",
+                "img/portafolio/turnero/turnero-admisiones.png",
+                "img/portafolio/turnero/turnero-profesional.png",
+                "img/portafolio/turnero/turnero-admin-dashboard.png",
+                "img/portafolio/turnero/turnero-admin-reportes.png"
+            ],
+            videos: [],
+            descripcion: "Sistema integral en tiempo real para la gestión y llamado de pacientes en salas de espera de Instituciones Prestadoras de Salud (IPS). Conecta 5 módulos operativos sincronizados por WebSockets: Recepción (escaneo de código de barras de cédula y registro automático de llegada), Admisiones (llamado asistido e ingreso enlazado al software clínico), Consultorio Profesional (gestión de llamado y control de tiempos por consultorio), Pantalla TV (anuncio audiovisual en sala con voz sintetizada TTS) y Administración (tablero en vivo y métricas de tiempos T1 a T5). Ofrece doble modalidad de integración: conexión directa vía API REST con cualquier sistema de historia clínica / ERP (HIS) y extensión de navegador no invasiva para Biofile sin modificar credenciales ni bases de datos, operando con alta disponibilidad sobre la red local.",
+            resultado: "En producción con personal real: reducción drástica en tiempos de espera, eliminación de la doble digitación, salas silenciosas y auditoría total de cada atención.",
+            tecnologias: ["Node.js", "Express", "PostgreSQL", "Socket.IO", "REST API", "JavaScript", "HTML5", "CSS3", "Chrome Extension", "TTS"],
+            categoria: "Fullstack / Real-Time IoT",
+            fecha: "2026 - Presente",
+            url: "turnero/presentacion-ventas.html",
+            pdf_url: "turnero/Turnero-presentacion.pdf"
+        },
+        
+        {
+            id: 3,
             titulo: "Software de Integración para Equipos de Laboratorio Clínico",
             imagen_principal: "img/portafolio/lis/lis-1.png",
             imagenes_extra: [],
@@ -101,7 +143,7 @@ const data = {
             url: "https://www.youtube.com/watch?v=1PVWIR_-WIk"
         },
         {
-            id: 2,
+            id: 4,
             titulo: "Aplicación Web para Gestión de ventas e inventario — PerfumesApp",
             imagen_principal: "img/portafolio/perfumesapp/perfumesapp-1.webp",
             imagenes_extra: ["img/portafolio/perfumesapp/perfumesapp-2.png", "img/portafolio/perfumesapp/perfumesapp-3.png", "img/portafolio/perfumesapp/perfumesapp-4.png"],
@@ -113,7 +155,7 @@ const data = {
             url: "https://instagram.com/asariaperfumes"
         },
         {
-            id: 3,
+            id: 5,
             titulo: "POS Web — Laspizzas",
             imagen_principal: "img/portafolio/laspizzas/laspizzas-1.webp",
             imagenes_extra: ["img/portafolio/laspizzas/laspizzas-2.png", "img/portafolio/laspizzas/laspizzas-3.png", "img/portafolio/laspizzas/laspizzas-4.png"],
@@ -122,10 +164,10 @@ const data = {
             tecnologias: ["JavaScript", "PHP", "MySQL", "CSS3"],
             categoria: "Web App / UI Móvil",
             fecha: "Febrero 2026",
-            url: "https://laspizzas.migzam.uk/"
+            url: "https://laspizzas.migzam.com/"
         },
         {
-            id: 4,
+            id: 6,
             titulo: "Sistema de Gestión para Taller Automotriz",
             imagen_principal: "img/portafolio/talleres/taller-1.png",
             imagenes_extra: ["img/portafolio/talleres/taller-2.png", "img/portafolio/talleres/taller-3.png", "img/portafolio/talleres/taller-4.png"],
@@ -138,7 +180,7 @@ const data = {
         
         },
         {
-            id: 5,
+            id: 7,
             titulo: "Sitio Web Institucional — SSO Salud Ocupacional",
             imagen_principal: "img/portafolio/sso/sso-1.jpg",
             imagenes_extra: ["img/portafolio/sso/sso-2.jpg", "img/portafolio/sso/sso-3.jpg"],
@@ -150,7 +192,7 @@ const data = {
             url: "https://ssobq.com"
         },
         {
-            id: 6,
+            id: 8,
             titulo: "Sistema de Gestion de tarifas y servicios para IPS",
             imagen_principal: "img/portafolio/proovedoresIPS/tarifas-1.png",
             imagenes_extra: ["img/portafolio/proovedoresIPS/tarifas-2.png", "img/portafolio/proovedoresIPS/tarifas-3.png", "img/portafolio/proovedoresIPS/tarifas-4.png"],
@@ -162,7 +204,7 @@ const data = {
             url: "#"
         },
         {
-            id: 7,
+            id: 9,
             titulo: "Sistema de Gestión para Taller de reboninado - Robinar",
             imagen_principal: "img/portafolio/taller-1/taller-1.png",
             imagenes_extra: ["img/portafolio/taller-1/taller-2.png", "img/portafolio/taller-1/taller-3.png", "img/portafolio/taller-1/taller-4.png"],
@@ -175,7 +217,7 @@ const data = {
         },
         
         {
-            id: 8,
+            id: 10,
             titulo: "Rediseño e Implementación de Infraestructura de Redes",
             imagen_principal: "img/portafolio/red/red-1.webp",
             imagenes_extra: ["img/portafolio/red/red-1.jpg", "img/portafolio/red/red-2.jpg", "img/portafolio/red/red-3.jpg"],
@@ -557,7 +599,7 @@ function renderizarSecciones() {
                         <i class="fa-solid fa-globe"></i>
                         <div><strong>Sitio Web</strong><span>${data.sobreMi.sitioWeb}</span></div>
                     </div>
-                    <a href="https://wa.me/573002421327?text=Hola%20Miguel%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20tu%20trabajo"
+                    <a href="https://wa.me/573028414636?text=Hola%20Miguel%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20tu%20trabajo"
                        target="_blank" class="btn-whatsapp">
                         <i class="fa-brands fa-whatsapp"></i> Escríbeme por WhatsApp
                     </a>
@@ -667,29 +709,30 @@ function abrirModal(id) {
     const proyecto = data.portafolio.find(p => p.id === id);
     if (!proyecto) return;
 
-    // --- Lógica Nueva para Galería Mixta ---
+    // --- Galería Mixta (Imágenes Extra + Videos) ---
     let contenidoGaleria = '';
 
     // Procesar Imágenes Extra
     if (proyecto.imagenes_extra && proyecto.imagenes_extra.length > 0) {
         contenidoGaleria += proyecto.imagenes_extra.map(img => 
-            `<img src="${img}" style="width:100%;height:100%;display:block;border-radius:8px;object-fit:cover;border-radius:8px;">`
+            `<div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);background:rgba(0,0,0,0.2);">
+                <img src="${img}" style="width:100%;height:100%;display:block;object-fit:cover;transition:transform 0.3s ease;">
+             </div>`
         ).join('');
     }
 
     // Procesar Videos (YouTube)
-    // En lugar del iframe, genera una miniatura con link
     if (proyecto.videos && proyecto.videos.length > 0) {
-        contenidoGaleria = proyecto.videos.map(videoId => `
+        contenidoGaleria += proyecto.videos.map(videoId => `
             <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank"
-            style="display:block;position:relative;border-radius:8px;overflow:hidden;cursor:pointer;">
+            style="display:block;position:relative;border-radius:10px;overflow:hidden;cursor:pointer;border:1px solid rgba(255,255,255,0.08);">
                 <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg"
-                    style="width:100%;display:block;border-radius:8px;">
+                    style="width:100%;display:block;">
                 <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
                             background:rgba(0,0,0,0.4);">
-                    <div style="width:64px;height:64px;background:#ff0000;border-radius:50%;
-                                display:flex;align-items:center;justify-content:center;">
-                        <i class="fa-solid fa-play" style="color:#fff;font-size:1.4rem;margin-left:4px;"></i>
+                    <div style="width:58px;height:58px;background:#ef4444;border-radius:50%;
+                                display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(239,68,68,0.5);">
+                        <i class="fa-solid fa-play" style="color:#fff;font-size:1.3rem;margin-left:3px;"></i>
                     </div>
                 </div>
             </a>
@@ -699,14 +742,31 @@ function abrirModal(id) {
     // Unificar en el contenedor de Galería
     const galeriaHtml = contenidoGaleria !== '' 
         ? `<div style="margin-top:2rem;border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;">
-               <h3 style="color:var(--accent);margin-bottom:1rem;">Galería y Multimedia</h3>
-               <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+               <h3 style="color:var(--accent);margin-bottom:1rem;font-size:1.15rem;display:flex;align-items:center;gap:0.5rem;">
+                   <i class="fa-solid fa-images"></i> Galería y Capturas del Sistema
+               </h3>
+               <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
                    ${contenidoGaleria}
                </div></div>`
         : '';
-    // --- Fin Lógica Nueva ---
 
     const techsHtml = proyecto.tecnologias.map(t => `<span class="tech-tag">${t}</span>`).join('');
+
+    // --- Botones de Acción ---
+    let botonesAccion = '';
+    if (proyecto.pdf_url) {
+        botonesAccion += `
+            <a href="${proyecto.pdf_url}" target="_blank" class="btn-outline" style="text-decoration:none;">
+                <i class="fa-solid fa-file-pdf"></i> Descargar PDF
+            </a>`;
+    }
+    if (proyecto.url && proyecto.url !== '#') {
+        const btnTexto = proyecto.id === 1 ? 'Ver Manual de Usuario' : 'Ver Proyecto en vivo';
+        botonesAccion += `
+            <a href="${proyecto.url}" target="_blank" class="btn-primary" style="text-decoration:none;">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> ${btnTexto}
+            </a>`;
+    }
 
     modalBody.innerHTML = `
         <div style="margin-bottom:1.5rem;">
@@ -716,10 +776,10 @@ function abrirModal(id) {
                 <span class="tag"><i class="fa-regular fa-calendar"></i> ${proyecto.fecha}</span>
             </div>
         </div>
-        <img src="${proyecto.imagen_principal}" alt="${proyecto.titulo}" style="width:100%;height:auto;border-radius:8px;margin-bottom:1.5rem;">
-        <div style="background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.2);border-radius:8px;padding:1rem;margin-bottom:1.5rem;">
-            <p style="color:#4ade80;font-weight:600;margin-bottom:0.3rem;"><i class="fa-solid fa-circle-check"></i> Resultado</p>
-            <p style="color:var(--text-muted);">${proyecto.resultado}</p>
+        <img src="${proyecto.imagen_principal}" alt="${proyecto.titulo}" style="width:100%;height:auto;border-radius:10px;margin-bottom:1.5rem;box-shadow:0 6px 20px rgba(0,0,0,0.3);">
+        <div style="background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.2);border-radius:10px;padding:1.2rem;margin-bottom:1.5rem;">
+            <p style="color:#4ade80;font-weight:700;margin-bottom:0.3rem;"><i class="fa-solid fa-circle-check"></i> Resultado</p>
+            <p style="color:var(--text-muted);line-height:1.6;">${proyecto.resultado}</p>
         </div>
         <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;">${proyecto.descripcion}</p>
         <div style="margin-bottom:1.5rem;">
@@ -727,9 +787,8 @@ function abrirModal(id) {
             <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">${techsHtml}</div>
         </div>
         ${galeriaHtml}
-        <div style="text-align:right;margin-top:2rem;">
-            <a href="${proyecto.url || '#'}" target="_blank" class="btn-primary">Ver Proyecto en vivo</a>
-        </div>`;
+        ${botonesAccion ? `<div style="display:flex;gap:0.8rem;justify-content:flex-end;flex-wrap:wrap;margin-top:2.2rem;">${botonesAccion}</div>` : ''}
+    `;
 
     modal.classList.add('modal-show');
     document.body.style.overflow = 'hidden';
